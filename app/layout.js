@@ -5,7 +5,7 @@ export const metadata = {
   title: "The wild oasis",
 };
 
-export default function RootLayout() {
+export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
@@ -13,6 +13,7 @@ export default function RootLayout() {
           <Logo />
         </header>
         <Navigation />
+        <main>{children}</main>
       </body>
     </html>
   );
