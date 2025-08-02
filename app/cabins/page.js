@@ -1,19 +1,10 @@
 import React from "react";
-import Counter from "../_components/Counter";
+export const metadata = {
+  title: "cabins",
+};
 
-const page = async () => {
-  const data = await fetch("https://jsonplaceholder.typicode.com/users");
-  const res = await data.json();
-  console.log(res);
-
-  return (
-    <div>
-      {res.map((user) => (
-        <li key={user.id}>{user.name}</li>
-      ))}
-      <Counter res={res} />
-    </div>
-  );
+const page = () => {
+  return <div>cabins page</div>;
 };
 
 export default page;
