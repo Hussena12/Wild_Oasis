@@ -1,5 +1,5 @@
 import React from "react";
-import Counter from "../components/Counter";
+import Counter from "../_components/Counter";
 
 const page = async () => {
   const data = await fetch("https://jsonplaceholder.typicode.com/users");
