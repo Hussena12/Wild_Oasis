@@ -5,12 +5,7 @@ export const metadata = {
 };
 
 const page = () => {
-  return (
-    <div>
-      account page
-      <p>gjkjljhjk</p>
-    </div>
-  );
+  return <div>account page</div>;
 };
 
 export default page;
