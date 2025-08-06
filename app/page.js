@@ -5,14 +5,6 @@ import hero from "@/public/bg.png";
 export default function Home() {
   return (
     <main>
-      <Image
-        src={hero}
-        placeholder="blur"
-        priority
-        className="object-cover object-top"
-        fill
-        alt="Mountains and forests with two cabins"
-      />
       <div className="relative z-10 text-center">
         <h1 className="text-8xl text-primary-50 mb-10 tracking-tight font-normal">
           Welcome to paradise.
