@@ -1,21 +1,22 @@
 import React from "react";
 import CabinCard from "../_components/CabinCard";
+import { getCabins } from "../_lib/data-service";
 export const metadata = {
   title: "cabins",
 };
 
-export default function Page() {
+export default async function Page() {
   // CHANGE
-  const cabins = [];
+  console.log("starting");
+  const cabins = await getCabins();
+  console.log(cabins);
 
   return (
     <div>
       <h1 className="text-4xl mb-5 text-accent-400 font-medium">
         Our Luxury Cabins
       </h1>
-      <h1 className="text-4xl mb-5 text-accent-400 font-medium">
-        Our Luxury Cabins
-      </h1>
+
       <p className="text-primary-200 text-lg mb-10">
         Cozy yet luxurious cabins, located right in the heart of the Italian
         Dolomites. Imagine waking up to beautiful mountain views, spending your
